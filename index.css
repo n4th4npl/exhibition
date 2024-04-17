@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url(/assets/fonts/HelveticaNowVar.ttf);
+    src: url(/exhibition/assets/fonts/HelveticaNowVar.ttf);
 }
 
 body {
@@ -24,7 +24,7 @@ h1 {
 
 header {
     height: 100vh;
-    background-image: url(/assets/pahr.jpg);
+    background-image: url(/exhibition/assets/pahr.jpg);
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
