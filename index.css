@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url(/exhibition/assets/fonts/HelveticaNowVar.ttf);
+    src: url(/assets/fonts/HelveticaNowVar.ttf);
 }
 
 body {
@@ -24,7 +24,7 @@ h1 {
 
 header {
     height: 800px;
-    background-image: url(/exhibition/assets/pahr.jpg);
+    background-image: url(/assets/pahr.jpg);
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
@@ -76,6 +76,7 @@ header {
         border: none;
         position: relative;
         z-index: 1;
+        cursor: pointer;
     }
 
     button::after {
@@ -100,6 +101,13 @@ header {
         left: 6px;
         z-index: -2;
     }
+}
+
+@media (min-width: 991px) {
+    header {
+        height: 90vh;
+    }
+
 }
 
 header::before {
@@ -283,7 +291,7 @@ h2 {
     width: 100vw;
     position: fixed;
     background: #0e0e0e;
-    z-index: 1;
+    z-index: 1000;
     touch-action: none; 
 
     h2 {
