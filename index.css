@@ -31,7 +31,7 @@ header {
     position: relative;
 
     h1 {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         margin-top: 0.2rem;
     }
 
@@ -136,7 +136,8 @@ header::after {
 .header--wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+    padding-bottom: 7rem;
     align-items: start;
     height: 100%;
     z-index: 5;
@@ -145,8 +146,8 @@ header::after {
 } 
 
 h1 {
-    font-size: 4rem;
-    line-height: 90%;
+    font-size: 3rem;
+    line-height: 1.1;
     padding-block: 0;
     margin-block: 0;
 }

@@ -48,13 +48,9 @@
         <span>Pahrnia Parsons</span>
         <h1>
           The Idle Biro -<br />
-          Exhibition
+          The Wild Ones
         </h1>
         <p>
-          Experience the culmination of an 18-month journey as we unveil the
-          highly anticipated Idle Biro exhibition on home soil for the very
-          first time.
-          <br /><br />
           Join artist Pahrnia as we celebrate the launch of her latest
           collection, a collaboration with RUHX and Longleat. Don't miss this
           unforgettable launch available for 1 night only before being exhibited
@@ -489,7 +485,7 @@
             src="/assets/Manequin 153.jpg"
           />
         </div>
-        <p>
+        <p id="artist--blurb">
           Pahrnia has been nurturing her passion for over fifteen years, crafting her talent into a skill she carries with her across the globe.
           <br /><br />
           During her early twenties, she developed a strong appetite for exploration and started traveling around the world, often giving her art away to individuals she stayed with as a token of appreciation. It was much later when she realized her creative tendencies could be turned into a profession.
@@ -604,6 +600,23 @@
         });
 
         const title = card.querySelector(".exhibition--card__body");
+        const blurb = document.getElementById("artist--blurb");
+        const imgWrap = document.querySelector(".img--wrapper");
+
+        gsap.set([blurb], { opacity: 0, y: 30 })
+
+        gsap.to(blurb, {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          delay: 0.3,
+          scrollTrigger: {
+            trigger: blurb,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none",
+          },
+        })
 
         gsap.from(title, {
           opacity: 0,
