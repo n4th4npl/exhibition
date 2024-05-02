@@ -137,7 +137,7 @@ header::after {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-bottom: 9rem;
+    padding-bottom: 11rem;
     align-items: start;
     height: 100%;
     z-index: 5;
